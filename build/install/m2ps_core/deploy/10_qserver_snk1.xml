@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-
-<server class="org.jpos.q2.iso.QServer" logger="Q2" name="qserver-snk-nibs1">
- <attr name="port" type="java.lang.Integer">10004</attr>
- <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2" packager="org.jpos.iso.packager.XMLPackager"></channel>
- <in>qmux-snk-nibs1-send</in>
- <out>qmux-snk-nibs1-receive</out>
-</server>
-
