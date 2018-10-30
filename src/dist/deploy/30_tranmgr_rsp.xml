@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<txnmgr name="txnmgr_rsp" logger="Q2" class="org.jpos.transaction.TransactionManager">
+   <property name="queue" value="queue-tranmgr-rsp"/>  
+   <property name="max-sessions" value="10"/>
+   
+   <participant class="com.m2ps.tranmanager.Router" logger="Q2" />
+   <participant class="com.m2ps.tranmanager.CoreSource" logger="Q2" />
+     
+</txnmgr>
+
